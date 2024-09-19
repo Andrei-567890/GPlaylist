@@ -1,3 +1,3 @@
-##GPlaylist
+## GPlaylist
 
 gplaylist.netlify.app
