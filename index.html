@@ -10,30 +10,6 @@
   <meta name="Keywords" content="music, song, sound, songs, sounds, audio, audios, phonk, listen, relax, chill, workout, playlist, gym, remix, workout mix, ad free, download, no download">
   <meta property="og:image" content="https://gplaylist.netlify.app/icons/GPlaylist_icon_70x70.jpg">
   <link rel="icon" href="https://gplaylist.netlify.app/icons/GPlaylist_icon.png">
-  <script>
-    // Extract the file name from the URL (e.g., 12 from ?12)
-    const urlParams = new URLSearchParams(window.location.search);
-    const fileName = urlParams.get('') || 'Listen to music without any ads or downloads. Made by Andrei567890'; // Default to 1 if no parameter
-
-    // Build the GitHub raw file URL
-    const githubUrl = `https://raw.githubusercontent.com/Andrei-567890/GPlaylist/refs/heads/main/songs/${fileName}`;
-
-    // Fetch the JSON file from GitHub
-    fetch(githubUrl)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('File not found');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Update the meta description with the "name" key from the JSON
-        document.querySelector('meta[name="description"]').setAttribute("content", data.name);
-      })
-      .catch(error => {
-        console.error('Error fetching JSON file:', error);
-      });
-  </script>
   <title>GPlaylist | Music player</title>
   <style>
     body {
