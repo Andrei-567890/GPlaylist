@@ -1,3 +1,3 @@
-## GPlaylist, Listen to music without ads or downloads
+## GPlaylist, Listen to music without interupting ads or downloads
 
-gplaylist.vercel.app
+[gplaylist.vercel.app](https://gplaylist.vercel.app)
